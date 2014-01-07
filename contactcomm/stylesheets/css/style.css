@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* ----------------------------------
+	Author: McCall Bliss;
+	Created: December 7th 2013;
+	Last Modified: December 7th 2013;
+	Company: Contact Wireless;
+-----------------------------------*/
+/* VARIABLES */
+.gradient {
+  background: #2b1d15;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #2b1d15 5%, #507b8a 54%, #7de8c6 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #2b1d15), color-stop(54%, #507b8a), color-stop(100%, #7de8c6));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #2b1d15 5%, #507b8a 54%, #7de8c6 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #2b1d15 5%, #507b8a 54%, #7de8c6 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #2b1d15 5%, #507b8a 54%, #7de8c6 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #2b1d15 5%, #507b8a 54%, #7de8c6 100%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2b1d15', endColorstr='#7de8c6', GradientType=0);
+  /* IE6-9 */
+
+}
+body {
+  background-color: white;
+  font-family: 'satelliteregular', 'helvatica', 'sans-serif';
+  text-transform: uppercase;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+p {
+  font-size: 130%;
+}
+section {
+  height: 100%;
+}
+h1,
+h2 {
+  text-align: center;
+  font-size: 510%;
+}
+h2 {
+  font-size: 200%;
+}
+.hidden {
+  display: none;
+}
+.shown {
+  display: block;
+}
+.content {
+  padding: 50px 0 80px 0;
+}
+.content h2 {
+  padding-top: 10px;
+}
+#header {
+  height: 140px;
+}
+#header img {
+  padding: 20px 0 20px 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+}
+#header img:hover {
+  cursor: pointer;
+}
+#main {
+  background: url(../../images/gradient.jpg) center no-repeat;
+  color: white;
+  height: 600px;
+}
+#main .content {
+  padding-top: 80px;
+}
+#main #nav {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+#main #nav li {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+}
+#main #nav li p {
+  padding-top: 20px;
+}
+#main #nav .box {
+  background: url(../../images/boxsprite.png) 0 0;
+  width: 215px;
+  height: 63px;
+}
+#about {
+  background: url(../../images/whitetexture.png) top left repeat;
+}
+#towers {
+  background: url(../../images/graytexture.png) top left repeat;
+}
+#towers .content {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  display: block;
+}
+#towers .content #tower_list {
+  margin-top: 20px;
+}
+#towers .content #tower_list li {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#towers .content #tower_list li h3 {
+  width: 100%;
+  display: block;
+  padding: 10px 0 10px 0;
+}
+#towers .content #tower_list li h3:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+#towers .content #tower_list li .descrip {
+  padding: 20px 0 20px 0;
+}
+#contact {
+  color: white;
+  background: url(../../images/blacktexture.png) top left repeat;
+}
+#contact form {
+  width: 40%;
+  margin: 0 auto;
+}
+#contact form fieldset {
+  margin-top: 20px;
+  padding: 20px;
+  background: url(../../images/graytexture.png) top left repeat;
+  -moz-box-shadow: 4px 4px 1px 2px #565656;
+  -webkit-box-shadow: 4px 4px 1px 2px #565656;
+  box-shadow: 4px 4px 1px 2px #565656;
+  border-radius: 5px;
+}
+#contact form fieldset input,
+#contact form fieldset textarea {
+  text-align: left;
+  width: 60%;
+}
+#contact form #submit {
+  position: relative;
+  margin-top: 20px;
+  left: 50%;
+  -moz-box-shadow: 2px 2px 6px 1px #565656;
+  -webkit-box-shadow: 2px 2px 6px 1px #565656;
+  box-shadow: 2px 2px 6px 1px #565656;
+}
+#credit {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  bottom: 0;
+  background-color: white;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  -moz-box-shadow: 0px 0px 2px 2px #565656;
+  -webkit-box-shadow: 0px 0px 2px 2px #565656;
+  box-shadow: 0px 0px 2px 2px #565656;
+}
+#credit a {
+  color: #303030;
+}
+#credit a:hover {
+  color: #7de8c6;
+}

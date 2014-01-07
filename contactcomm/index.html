@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+	<head>
+		<title>Contact Wireless</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="description" content="Products and media from Stray co. Stay curious, be strayful.">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- stylesheets -->
+		<link rel="stylesheet" href="satellite/stylesheet.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/css/style.css">
+		<style>
+		    /* Prevents slides from flashing */
+		    #slides {
+		      display:none;
+		    }
+		</style>
+		<!-- scripts -->
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/ga.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+		<script>
+		    $(function(){
+		      $("#slides").slidesjs({
+		        width: 500,
+		        height: 200
+		      });
+		    });
+		</script>
+	</head>
+	<body>
+		<section id="header" class="shadowed">
+			<a href="#header"><img src="images/logo.png"></a>
+		</section>
+		<section id="main">
+			<div class="content">
+				<h1>Contact Wireless</h1>
+				<h2>Reaching new heights to create connections</h2>
+			</div>
+			<ul id="nav">
+				<li><a href="#about">
+					<div class="box"><p>About</p></div>
+				</a></li>
+				<li><a href="#towers">
+					<div class="box"><p>Towers</p></div>
+				</a></li>
+				<li><a href="#contact">
+					<div class="box"><p>Contact</p></div>
+				</a></li>
+			</ul>
+		</section>
+		<section id="about" class="hidden">
+			<div class="content">
+				<h1>About</h1>
+			</div>
+				<div id="slides">
+				    <img src="images/gradient.jpg">
+				    <img src="images/gradient.jpg">
+				    <img src="images/gradient.jpg">
+				    <img src="images/gradient.jpg">
+					<img src="images/gradient.jpg">
+				</div>
+		</section>
+		<section id="towers" class="hidden">
+			<div class="content">
+				<h1>Towers</h1>
+				<ul id="tower_list">
+					<li id="tower_1">
+						<h3>Tower1</h3>
+						<div class="descrip hidden">
+							HERES THE DESCRIPTION
+						</div>
+					</li>
+					<li id="tower_2">
+						<h3>Tower2</h3>
+						<div class="descrip hidden">
+							AND THE OTHER HERES THE DESCRIPTION
+						</div>
+					</li>
+					<li></li>
+				</ul>
+			</div>
+		</section>
+		<section id="contact" class="hidden">
+			<div class="content">
+				<form name="contactus" method="POST" action="contact.php">
+					<h1>Contact Us</h1>
+					<fieldset>
+						<input type="text" name="name" id="name" placeholder="Name" autocomplete="off">
+						<input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
+						<textarea name="message" id="message" placeholder="What would you like to say"></textarea>
+					</fieldset>
+					<input id="submit" type="submit" value="Submit">
+				</form>
+			</div>
+		</section>
+		<section id="credit">
+			<h4>Designed by <a href="http://mbliss04.github.com">Miss Bliss</a> &copy; 2013</h4>
+		</section>
+	</body>
+</html>

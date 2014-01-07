@@ -1,0 +1,197 @@
+@charset "UTF-8";
+//@import "elements.less";
+
+/* ----------------------------------
+	Author: McCall Bliss;
+	Created: December 7th 2013;
+	Last Modified: December 7th 2013;
+	Company: Contact Wireless;
+-----------------------------------*/
+
+/* VARIABLES */
+@base: #303030;
+@logo: #7DE8C6;
+@drop_shadow: lighten(@base, 15%);
+@head_font: 'satelliteregular';
+@body_font: 'helvatica';
+@sans: 'sans-serif';
+@default: -5px;
+@drop: 8px;
+
+.shadow(@offleft, @offright, @bottom, @disperse, @color) {
+   -moz-box-shadow: @offleft @offright @bottom @disperse @color;
+   -webkit-box-shadow: @offleft @offright @bottom @disperse @color;
+	box-shadow: @offleft @offright @bottom @disperse @color;
+}
+
+.gradient {
+	background: #2b1d15; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2b1d15 5%, #507b8a 54%, #7de8c6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#2b1d15), color-stop(54%,#507b8a), color-stop(100%,#7de8c6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #2b1d15 5%,#507b8a 54%,#7de8c6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #2b1d15 5%,#507b8a 54%,#7de8c6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #2b1d15 5%,#507b8a 54%,#7de8c6 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #2b1d15 5%,#507b8a 54%,#7de8c6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b1d15', endColorstr='#7de8c6',GradientType=0 ); /* IE6-9 */
+}
+
+body {
+	background-color: white;
+	font-family: @head_font, @body_font, @sans;
+	text-transform: uppercase;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+}
+
+p {
+	font-size: 130%;
+}
+
+section {
+	height: 100%;
+}
+
+h1, h2 {
+	text-align: center;
+	font-size: 510%;
+}
+
+h2 {
+	font-size: 200%;
+}
+
+.hidden {
+	display: none;
+}
+
+.shown {
+	display: block;
+}
+
+.content {
+	padding: 50px 0 80px 0;
+	h2 {
+		padding-top: 10px;
+	}
+}
+
+#header {
+	height: 140px;
+	img {
+		padding: 20px 0 20px 0;
+		position: absolute;
+		left: 50%;
+		margin-left: -50px;
+	}
+	img:hover {
+		cursor: pointer;
+	}
+}
+
+#main {
+	//.gradient();
+	background: url(../../images/gradient.jpg) center no-repeat;
+	color: white;
+	height: 600px;
+	.content {
+		padding-top: 80px;
+	}
+	#nav {
+		text-align:center;
+		width: 100%;
+		position: relative;
+		li {
+			display: inline-block;
+			padding: 0 10px 0 10px;
+			p {
+				padding-top: 20px;
+			}
+		}
+		.box {
+			background: url(../../images/boxsprite.png) 0 0;
+			width: 215px;
+			height: 63px;
+		}
+	}
+
+}
+
+#about {
+	background: url(../../images/whitetexture.png) top left repeat;
+}
+
+#towers {
+	background: url(../../images/graytexture.png) top left repeat;
+	.content {
+		margin: 0 auto;
+		width: 60%;
+		text-align: center;
+		display: block;
+		#tower_list {
+			margin-top: 20px;
+			li {
+				background-color: rgba(255, 255, 255, 0.5);
+				h3 {
+					width: 100%;
+					display: block;
+					padding: 10px 0 10px 0;
+				}
+				h3:hover {
+					background-color: rgba(0, 0, 0, 0.5);
+					cursor: pointer;
+				}
+				.descrip {
+					padding: 20px 0 20px 0;
+				}
+			}
+		}
+	}
+}
+
+#contact {
+	color: white;
+	background: url(../../images/blacktexture.png) top left repeat;
+	form {
+		width: 40%;
+		margin: 0 auto;
+		fieldset {
+			margin-top: 20px;
+			padding: 20px;
+			background: url(../../images/graytexture.png) top left repeat;
+			.shadow(4px, 4px, 1px, 2px, @drop_shadow);
+			border-radius: 5px;
+			input, 
+			textarea {
+				text-align: left;
+				width: 60%;
+			}
+		}
+		#submit {
+			position: relative;
+			margin-top: 20px;
+			left: 50%;
+			.shadow(2px, 2px, 6px, 1px, @drop_shadow);
+		}
+	}
+}
+
+#credit {
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	bottom: 0;
+	background-color: white;
+	text-align: center;
+	padding: 20px 0 20px 0;
+	.shadow(0px, 0px, 2px, 2px, @drop_shadow);
+	a {
+		color: @base;
+	}
+	a:hover {
+		color: @logo;
+	}
+}
