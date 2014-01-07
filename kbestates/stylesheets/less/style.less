@@ -1,0 +1,67 @@
+@charset "UTF-8";
+//@import "elements.less";
+
+/* ----------------------------------
+	Author: McCall Bliss;
+	Created: December 29th 2013;
+	Last Modified: December 29th 2013;
+	Company: K&B Wireless;
+-----------------------------------*/
+
+
+@grey: #3a3a3c;
+@beige: #e3d7ca;
+@blue: #6ba2a8;
+
+.shadow(@offleft, @offright, @bottom, @disperse, @color) {
+   -moz-box-shadow: @offleft @offright @bottom @disperse @color;
+   -webkit-box-shadow: @offleft @offright @bottom @disperse @color;
+	box-shadow: @offleft @offright @bottom @disperse @color;
+}
+
+.gradient() {
+	background: #2b2b2b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #2b2b2b 0%, #3a3a3c 94%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2b2b2b), color-stop(94%,#3a3a3c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #2b2b2b 0%,#3a3a3c 94%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #2b2b2b 0%,#3a3a3c 94%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #2b2b2b 0%,#3a3a3c 94%); /* IE10+ */
+	background: linear-gradient(to bottom,  #2b2b2b 0%,#3a3a3c 94%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#3a3a3c',GradientType=0 ); /* IE6-9 */
+}
+
+body {
+	background-color: @blue;
+}
+
+#nav {
+	.gradient();
+	height: 150px;
+	.shadow(0px, 0px, 2px, 2px, @grey);
+	text-align: center;
+	img {
+		padding-top: 10px;
+	}
+	img:hover {
+		opacity: .7;
+		cursor: pointer;
+	}
+}
+
+#about {
+	width: 100%;
+}
+
+#main {
+	padding-top: 200px;
+	text-align: center;
+	color: white;
+	h1 {
+		font-size: 200%;
+		text-transform: uppercase;
+		padding: 10px;
+	}
+	h2 {
+		font-size: 140%;
+	}
+}
